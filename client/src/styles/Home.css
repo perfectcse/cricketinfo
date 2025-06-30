@@ -1,0 +1,203 @@
+/* Home.css */
+
+.home-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+
+.btn.secondary:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Stadium Section */
+.stadium-section {
+  padding: 50px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.stadium-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.stadium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.stadium-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.stadium-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.stadium-card h3 {
+  font-size: 1.1rem;
+  padding: 15px;
+  color: #333;
+}
+
+.stadium-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.services p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f8f8f8;
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

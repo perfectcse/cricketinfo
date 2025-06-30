@@ -1,0 +1,119 @@
+.about-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.about-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.about-page p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  padding: 10px 18px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #0d47a1;
+}
+
+.schedule-table {
+  animation: fadeIn 0.5s ease-in;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.schedule-table h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #e0f7fa;
+}
+
+.latest-updates h2 {
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.latest-updates ul {
+  list-style-type: "🏏 ";
+  padding-left: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.latest-highlights {
+  margin-top: 1rem;
+}
+
+.latest-highlights h2 {
+  color: #1b5e20;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.highlight-card {
+  flex: 1 1 250px;
+  background-color: #fff3e0;
+  border: 1px solid #ffe0b2;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card .emoji {
+  font-size: 2rem;
+}

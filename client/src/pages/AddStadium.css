@@ -1,0 +1,33 @@
+.add-stadium-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.stadium-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.stadium-form input {
+  padding: 0.8rem;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
